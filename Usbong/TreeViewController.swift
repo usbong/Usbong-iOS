@@ -181,26 +181,36 @@ class TreeViewController: UIViewController {
     }
     
     private func transitionWithDirection(direction: TransitionDirection) {
-        if let loadedTree = tree {
+        if let currentTree = tree {
+            // Special case for no selection
+            guard !(currentTree.noSelection && direction == .Forward) else {
+                // Present no selection alert
+                let alertController = UIAlertController(title: "No Selection", message: "Please select one of the choices", preferredStyle: .Alert)
+                let okayAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                alertController.addAction(okayAction)
+                
+                presentViewController(alertController, animated: true, completion: nil)
+                return
+            }
+            
             // Before transition
             stopVoiceOver()
             
             if direction == .Backward {
                 // Previous
-                if !loadedTree.previousTaskNodeIsAvailable {
+                if !currentTree.previousTaskNodeIsAvailable {
                     dismissViewControllerAnimated(true, completion: nil)
                     return
                 } else {
-                    loadedTree.transitionToPreviousTaskNode()
+                    currentTree.transitionToPreviousTaskNode()
                 }
-                
             } else {
                 // Next transition
-                if loadedTree.currentTaskNode is EndStateTaskNode || !loadedTree.nextTaskNodeIsAvailable {
+                if currentTree.currentTaskNode is EndStateTaskNode || !currentTree.nextTaskNodeIsAvailable {
                     dismissViewControllerAnimated(true, completion: nil)
                     return
                 } else {
-                    loadedTree.transitionToNextTaskNode()
+                    currentTree.transitionToNextTaskNode()
                 }
             }
             
@@ -208,17 +218,17 @@ class TreeViewController: UIViewController {
             
             // Finished transition
             // Change back button title to exit if there are no previous task nodes
-            if !loadedTree.previousTaskNodeIsAvailable {
-                previousButton.setTitle("EXIT", forState: .Normal)
+            if !currentTree.previousTaskNodeIsAvailable {
+                previousButton.setTitle("Exit", forState: .Normal)
             } else {
-                previousButton.setTitle("BACK", forState: .Normal)
+                previousButton.setTitle("Back", forState: .Normal)
             }
             
             // Change next button title to exit if transitioned node is end state
-            if loadedTree.currentTaskNode is EndStateTaskNode || !loadedTree.nextTaskNodeIsAvailable {
-                nextButton.setTitle("EXIT", forState: .Normal)
+            if (currentTree.currentTaskNode is EndStateTaskNode || !currentTree.nextTaskNodeIsAvailable) && !(currentTree.currentTaskNode is LinkTaskNode) {
+                nextButton.setTitle("Exit", forState: .Normal)
             } else {
-                nextButton.setTitle("NEXT", forState: .Normal)
+                nextButton.setTitle("Next", forState: .Normal)
             }
         }
     }
