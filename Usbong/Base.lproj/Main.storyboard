@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Usbong-->
@@ -30,6 +31,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Cai-Oq-zTY" kind="presentation" identifier="presentTree" id="hL0-lf-w59"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -158,5 +162,120 @@
             </objects>
             <point key="canvasLocation" x="987" y="687"/>
         </scene>
+        <!--Tree View Controller-->
+        <scene sceneID="V5P-WF-5i0">
+            <objects>
+                <viewController id="tdU-bB-38Z" customClass="TreeViewController" customModule="Usbong" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fVW-BN-eaK"/>
+                        <viewControllerLayoutGuide type="bottom" id="8GR-Pi-n9G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xdj-95-jnb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iP-Ty-9zQ" customClass="TaskNodeView" customModule="UsbongKit">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLp-lZ-vBz">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M44-5w-AgE">
+                                        <rect key="frame" x="442" y="8" width="150" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="qdS-I4-yWa"/>
+                                            <constraint firstAttribute="width" constant="150" id="rkm-ao-aaR"/>
+                                        </constraints>
+                                        <state key="normal" title="NEXT" backgroundImage="Button-Normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="Button-Highlighted"/>
+                                        <connections>
+                                            <action selector="didPressNext:" destination="tdU-bB-38Z" eventType="touchUpInside" id="aGc-Nh-uEC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlr-Y9-4EF">
+                                        <rect key="frame" x="8" y="8" width="150" height="34"/>
+                                        <state key="normal" title="BACK" backgroundImage="Button-Normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="Button-Highlighted"/>
+                                        <connections>
+                                            <action selector="didPressPrevious:" destination="tdU-bB-38Z" eventType="touchUpInside" id="W3m-7j-2pt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3sv-ve-rbi"/>
+                                    <constraint firstItem="M44-5w-AgE" firstAttribute="trailing" secondItem="VLp-lZ-vBz" secondAttribute="trailingMargin" id="SyF-IQ-sXg"/>
+                                    <constraint firstItem="jlr-Y9-4EF" firstAttribute="leading" secondItem="VLp-lZ-vBz" secondAttribute="leadingMargin" id="VLV-Eh-Pgl"/>
+                                    <constraint firstItem="M44-5w-AgE" firstAttribute="width" secondItem="jlr-Y9-4EF" secondAttribute="width" id="cXb-Zo-8Es"/>
+                                    <constraint firstItem="M44-5w-AgE" firstAttribute="height" secondItem="jlr-Y9-4EF" secondAttribute="height" id="cac-F9-79L"/>
+                                    <constraint firstItem="M44-5w-AgE" firstAttribute="centerY" secondItem="VLp-lZ-vBz" secondAttribute="centerY" id="rPe-iY-Dei"/>
+                                    <constraint firstItem="jlr-Y9-4EF" firstAttribute="centerY" secondItem="VLp-lZ-vBz" secondAttribute="centerY" id="vhL-Sm-ifr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VLp-lZ-vBz" firstAttribute="leading" secondItem="Xdj-95-jnb" secondAttribute="leading" id="3v4-dI-WqN"/>
+                            <constraint firstItem="8GR-Pi-n9G" firstAttribute="top" secondItem="4iP-Ty-9zQ" secondAttribute="bottom" id="K8t-zf-t1V"/>
+                            <constraint firstItem="8GR-Pi-n9G" firstAttribute="top" secondItem="VLp-lZ-vBz" secondAttribute="bottom" id="Rjv-au-xRy"/>
+                            <constraint firstItem="4iP-Ty-9zQ" firstAttribute="leading" secondItem="Xdj-95-jnb" secondAttribute="leading" id="X4U-Rd-2dS"/>
+                            <constraint firstAttribute="trailing" secondItem="4iP-Ty-9zQ" secondAttribute="trailing" id="ZKB-pM-bdb"/>
+                            <constraint firstItem="4iP-Ty-9zQ" firstAttribute="top" secondItem="fVW-BN-eaK" secondAttribute="bottom" id="bIr-KL-md4"/>
+                            <constraint firstAttribute="trailing" secondItem="VLp-lZ-vBz" secondAttribute="trailing" id="zfI-30-yXZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mDN-N0-9yR">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="umb-b1-Oz6">
+                            <connections>
+                                <action selector="didPressExit:" destination="tdU-bB-38Z" id="1ze-Q4-fOw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="More" id="11R-5X-fzt">
+                            <connections>
+                                <action selector="didPressMore:" destination="tdU-bB-38Z" id="wwe-eF-GIi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonsContainerViewHeightConstraint" destination="3sv-ve-rbi" id="Tti-xv-xBk"/>
+                        <outlet property="nextButton" destination="M44-5w-AgE" id="fdS-cc-BBP"/>
+                        <outlet property="previousButton" destination="jlr-Y9-4EF" id="Tf8-l6-kdx"/>
+                        <outlet property="taskNodeView" destination="4iP-Ty-9zQ" id="Gkc-xc-nVn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Fq-3D-2ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025" y="-61"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mLg-91-M1Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cai-Oq-zTY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pfm-u3-jvd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Z84-gN-ZT0">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="tdU-bB-38Z" kind="relationship" relationship="rootViewController" id="ee5-hH-arF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efK-Nv-p7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365" y="-61"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Button-Highlighted" width="91" height="21"/>
+        <image name="Button-Normal" width="91" height="21"/>
+    </resources>
 </document>
