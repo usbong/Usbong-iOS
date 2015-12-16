@@ -1,5 +1,6 @@
+github "chrisamanse/CheckboxButton" "v1.0.1"
 github "chrisamanse/Crypto" "v0.3.0"
 github "chrisamanse/RadioButton" "v1.0.2"
 github "drmohundro/SWXMLHash" "2.0.5"
 github "chrisamanse/ZipArchive" "v0.4"
-github "chrisamanse/UsbongKit" "v0.5.1"
+github "chrisamanse/UsbongKit" "v0.6.0"
