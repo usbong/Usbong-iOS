@@ -20,7 +20,6 @@
 		DF21A5DE1C1D7D7300E73591 /* UsbongKit.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */; };
 		DF21A5DF1C1D7D7300E73591 /* ZipArchive.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */; };
 		DF40EB361C1FC5A600874A57 /* TreesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40EB351C1FC5A600874A57 /* TreesTableViewController.swift */; };
-		DF40EB381C1FCB0200874A57 /* iOS Sample Tree.utree in Resources */ = {isa = PBXBuildFile; fileRef = DF40EB371C1FCAF500874A57 /* iOS Sample Tree.utree */; };
 		DF40EB3A1C1FD8D600874A57 /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40EB391C1FD8D600874A57 /* TreeViewController.swift */; };
 		DF874FD91C0720E000593E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF874FD81C0720E000593E8D /* AppDelegate.swift */; };
 		DF874FDE1C0720E000593E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF874FDC1C0720E000593E8D /* Main.storyboard */; };
@@ -30,6 +29,7 @@
 		DF874FF91C0720E000593E8D /* UsbongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF874FF81C0720E000593E8D /* UsbongUITests.swift */; };
 		DFF774981C216C5A00C77F34 /* CheckboxButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF774971C216C5A00C77F34 /* CheckboxButton.framework */; };
 		DFF7749A1C216C9F00C77F34 /* CheckboxButton.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DFF774991C216C9F00C77F34 /* CheckboxButton.framework.dSYM */; };
+		DFF7749C1C216F2E00C77F34 /* Usbong iOS.utree in Resources */ = {isa = PBXBuildFile; fileRef = DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 		DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = UsbongKit.framework.dSYM; path = Carthage/Build/iOS/UsbongKit.framework.dSYM; sourceTree = "<group>"; };
 		DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ZipArchive.framework.dSYM; path = Carthage/Build/iOS/ZipArchive.framework.dSYM; sourceTree = "<group>"; };
 		DF40EB351C1FC5A600874A57 /* TreesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreesTableViewController.swift; sourceTree = "<group>"; };
-		DF40EB371C1FCAF500874A57 /* iOS Sample Tree.utree */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS Sample Tree.utree"; sourceTree = "<group>"; };
 		DF40EB391C1FD8D600874A57 /* TreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewController.swift; sourceTree = "<group>"; };
 		DF874FD51C0720E000593E8D /* Usbong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Usbong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF874FD81C0720E000593E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		DF874FFA1C0720E000593E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF774971C216C5A00C77F34 /* CheckboxButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckboxButton.framework; path = Carthage/Build/iOS/CheckboxButton.framework; sourceTree = "<group>"; };
 		DFF774991C216C9F00C77F34 /* CheckboxButton.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CheckboxButton.framework.dSYM; path = Carthage/Build/iOS/CheckboxButton.framework.dSYM; sourceTree = "<group>"; };
+		DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Usbong iOS.utree"; path = "Carthage/Checkouts/UsbongKit/UsbongKit-example/Usbong iOS.utree"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +189,7 @@
 				DF874FD81C0720E000593E8D /* AppDelegate.swift */,
 				DF40EB351C1FC5A600874A57 /* TreesTableViewController.swift */,
 				DF40EB391C1FD8D600874A57 /* TreeViewController.swift */,
-				DF40EB371C1FCAF500874A57 /* iOS Sample Tree.utree */,
+				DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */,
 				DF874FDC1C0720E000593E8D /* Main.storyboard */,
 				DF874FDF1C0720E000593E8D /* Assets.xcassets */,
 				DF874FE11C0720E000593E8D /* LaunchScreen.storyboard */,
@@ -322,7 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF40EB381C1FCB0200874A57 /* iOS Sample Tree.utree in Resources */,
+				DFF7749C1C216F2E00C77F34 /* Usbong iOS.utree in Resources */,
 				DF874FE31C0720E000593E8D /* LaunchScreen.storyboard in Resources */,
 				DF874FE01C0720E000593E8D /* Assets.xcassets in Resources */,
 				DF874FDE1C0720E000593E8D /* Main.storyboard in Resources */,

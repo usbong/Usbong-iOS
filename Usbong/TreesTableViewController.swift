@@ -10,7 +10,7 @@ import UIKit
 import UsbongKit
 
 private struct SampleTree {
-    static let fileName = "iOS Sample Tree"
+    static let fileName = "Usbong iOS"
     static let ext = "utree"
 }
 
