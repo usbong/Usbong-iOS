@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		DF21A5CC1C1D7CB400E73591 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */; };
 		DF21A5CD1C1D7CB400E73591 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C71C1D7CB400E73591 /* Crypto.framework */; };
-		DF21A5CE1C1D7CB400E73591 /* RadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C81C1D7CB400E73591 /* RadioButton.framework */; };
 		DF21A5CF1C1D7CB400E73591 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */; };
 		DF21A5D01C1D7CB400E73591 /* UsbongKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5CA1C1D7CB400E73591 /* UsbongKit.framework */; };
 		DF21A5D11C1D7CB400E73591 /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5CB1C1D7CB400E73591 /* ZipArchive.framework */; };
 		DF21A5DA1C1D7D7300E73591 /* CommonCrypto.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D41C1D7D7300E73591 /* CommonCrypto.framework.dSYM */; };
 		DF21A5DB1C1D7D7300E73591 /* Crypto.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D51C1D7D7300E73591 /* Crypto.framework.dSYM */; };
-		DF21A5DC1C1D7D7300E73591 /* RadioButton.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D61C1D7D7300E73591 /* RadioButton.framework.dSYM */; };
 		DF21A5DD1C1D7D7300E73591 /* SWXMLHash.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D71C1D7D7300E73591 /* SWXMLHash.framework.dSYM */; };
 		DF21A5DE1C1D7D7300E73591 /* UsbongKit.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */; };
 		DF21A5DF1C1D7D7300E73591 /* ZipArchive.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */; };
@@ -27,8 +25,6 @@
 		DF874FE31C0720E000593E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF874FE11C0720E000593E8D /* LaunchScreen.storyboard */; };
 		DF874FEE1C0720E000593E8D /* UsbongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF874FED1C0720E000593E8D /* UsbongTests.swift */; };
 		DF874FF91C0720E000593E8D /* UsbongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF874FF81C0720E000593E8D /* UsbongUITests.swift */; };
-		DFF774981C216C5A00C77F34 /* CheckboxButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF774971C216C5A00C77F34 /* CheckboxButton.framework */; };
-		DFF7749A1C216C9F00C77F34 /* CheckboxButton.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DFF774991C216C9F00C77F34 /* CheckboxButton.framework.dSYM */; };
 		DFF7749C1C216F2E00C77F34 /* Usbong iOS.utree in Resources */ = {isa = PBXBuildFile; fileRef = DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +54,9 @@
 			files = (
 				DF21A5DA1C1D7D7300E73591 /* CommonCrypto.framework.dSYM in Carthage Copy Debug Symbols */,
 				DF21A5DB1C1D7D7300E73591 /* Crypto.framework.dSYM in Carthage Copy Debug Symbols */,
-				DF21A5DC1C1D7D7300E73591 /* RadioButton.framework.dSYM in Carthage Copy Debug Symbols */,
 				DF21A5DD1C1D7D7300E73591 /* SWXMLHash.framework.dSYM in Carthage Copy Debug Symbols */,
 				DF21A5DE1C1D7D7300E73591 /* UsbongKit.framework.dSYM in Carthage Copy Debug Symbols */,
 				DF21A5DF1C1D7D7300E73591 /* ZipArchive.framework.dSYM in Carthage Copy Debug Symbols */,
-				DFF7749A1C216C9F00C77F34 /* CheckboxButton.framework.dSYM in Carthage Copy Debug Symbols */,
 			);
 			name = "Carthage Copy Debug Symbols";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,13 +66,11 @@
 /* Begin PBXFileReference section */
 		DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		DF21A5C71C1D7CB400E73591 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
-		DF21A5C81C1D7CB400E73591 /* RadioButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RadioButton.framework; path = Carthage/Build/iOS/RadioButton.framework; sourceTree = "<group>"; };
 		DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		DF21A5CA1C1D7CB400E73591 /* UsbongKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UsbongKit.framework; path = Carthage/Build/iOS/UsbongKit.framework; sourceTree = "<group>"; };
 		DF21A5CB1C1D7CB400E73591 /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = Carthage/Build/iOS/ZipArchive.framework; sourceTree = "<group>"; };
 		DF21A5D41C1D7D7300E73591 /* CommonCrypto.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CommonCrypto.framework.dSYM; path = Carthage/Build/iOS/CommonCrypto.framework.dSYM; sourceTree = "<group>"; };
 		DF21A5D51C1D7D7300E73591 /* Crypto.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Crypto.framework.dSYM; path = Carthage/Build/iOS/Crypto.framework.dSYM; sourceTree = "<group>"; };
-		DF21A5D61C1D7D7300E73591 /* RadioButton.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RadioButton.framework.dSYM; path = Carthage/Build/iOS/RadioButton.framework.dSYM; sourceTree = "<group>"; };
 		DF21A5D71C1D7D7300E73591 /* SWXMLHash.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SWXMLHash.framework.dSYM; path = Carthage/Build/iOS/SWXMLHash.framework.dSYM; sourceTree = "<group>"; };
 		DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = UsbongKit.framework.dSYM; path = Carthage/Build/iOS/UsbongKit.framework.dSYM; sourceTree = "<group>"; };
 		DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ZipArchive.framework.dSYM; path = Carthage/Build/iOS/ZipArchive.framework.dSYM; sourceTree = "<group>"; };
@@ -96,8 +88,6 @@
 		DF874FF41C0720E000593E8D /* UsbongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsbongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF874FF81C0720E000593E8D /* UsbongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsbongUITests.swift; sourceTree = "<group>"; };
 		DF874FFA1C0720E000593E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFF774971C216C5A00C77F34 /* CheckboxButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckboxButton.framework; path = Carthage/Build/iOS/CheckboxButton.framework; sourceTree = "<group>"; };
-		DFF774991C216C9F00C77F34 /* CheckboxButton.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CheckboxButton.framework.dSYM; path = Carthage/Build/iOS/CheckboxButton.framework.dSYM; sourceTree = "<group>"; };
 		DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Usbong iOS.utree"; path = "Carthage/Checkouts/UsbongKit/UsbongKit-example/Usbong iOS.utree"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -108,11 +98,9 @@
 			files = (
 				DF21A5CC1C1D7CB400E73591 /* CommonCrypto.framework in Frameworks */,
 				DF21A5CD1C1D7CB400E73591 /* Crypto.framework in Frameworks */,
-				DF21A5CE1C1D7CB400E73591 /* RadioButton.framework in Frameworks */,
 				DF21A5CF1C1D7CB400E73591 /* SWXMLHash.framework in Frameworks */,
 				DF21A5D01C1D7CB400E73591 /* UsbongKit.framework in Frameworks */,
 				DF21A5D11C1D7CB400E73591 /* ZipArchive.framework in Frameworks */,
-				DFF774981C216C5A00C77F34 /* CheckboxButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,10 +124,8 @@
 		DF21A5E01C1D7D8100E73591 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFF774971C216C5A00C77F34 /* CheckboxButton.framework */,
 				DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */,
 				DF21A5C71C1D7CB400E73591 /* Crypto.framework */,
-				DF21A5C81C1D7CB400E73591 /* RadioButton.framework */,
 				DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */,
 				DF21A5CA1C1D7CB400E73591 /* UsbongKit.framework */,
 				DF21A5CB1C1D7CB400E73591 /* ZipArchive.framework */,
@@ -150,10 +136,8 @@
 		DF21A5E11C1D7D8600E73591 /* Debug Symbols */ = {
 			isa = PBXGroup;
 			children = (
-				DFF774991C216C9F00C77F34 /* CheckboxButton.framework.dSYM */,
 				DF21A5D41C1D7D7300E73591 /* CommonCrypto.framework.dSYM */,
 				DF21A5D51C1D7D7300E73591 /* Crypto.framework.dSYM */,
-				DF21A5D61C1D7D7300E73591 /* RadioButton.framework.dSYM */,
 				DF21A5D71C1D7D7300E73591 /* SWXMLHash.framework.dSYM */,
 				DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */,
 				DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */,
@@ -355,10 +339,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/UsbongKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Crypto.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RadioButton.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ZipArchive.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CheckboxButton.framework",
 			);
 			name = "Carthage Copy Frameworks Script";
 			outputPaths = (
