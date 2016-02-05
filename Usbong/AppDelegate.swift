@@ -18,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("App Version: \(UIApplication.appVersion)")
         
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
+        // Navigation bar appearance
+        let navBarAppearance = UINavigationBar.appearance()
+        navBarAppearance.barTintColor = UIColor(red:0.13, green:0.13, blue:0.13, alpha:1)
+        navBarAppearance.translucent = false
+        navBarAppearance.tintColor = UIColor.whiteColor()
+        navBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
         return true
     }
 
