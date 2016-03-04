@@ -3,17 +3,19 @@
 
 This is the Usbong app for iOS written in Swift.
 
-## Build
+## Building and Running
 
+### Requirements
 - Xcode 7
 - iOS 9 SDK
 - Minimum Deployment Target: iOS 8
+- [Carthage](https://github.com/Carthage/Carthage#installing-carthage)
 
-This project uses [Carthage](https://github.com/Carthage/Carthage) as the dependency manager. [Install Carthage](https://github.com/Carthage/Carthage#installing-carthage) if it's not yet installed on your system. Run `carthage bootstrap --platform iOS`. Finally, open `usbong.xcodeproj`, then build the project.
+Run `carthage bootstrap --platform iOS` to download the dependencies. Once finished, open `Usbong.xcodeproj`, then build and run the project.
 
 ## License
 
-Copyright 2015 Usbong Social Systems, Inc.
+Copyright 2016 Usbong Social Systems, Inc.
 
 Licensed under the [Apache License, Version 2.0](./LICENSE) (the "License");
 you may not use this file except in compliance with the License.
