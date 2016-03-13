@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GOL-HZ-ToG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GOL-HZ-ToG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -51,7 +51,7 @@
         <scene sceneID="ZLA-mU-SbQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fce-s4-Xt4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Trees" id="eMn-Mi-xQv"/>
+                    <tabBarItem key="tabBarItem" title="Trees" image="tree" selectedImage="tree-selected" id="eMn-Mi-xQv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xss-Co-qSf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -147,7 +147,7 @@
         <scene sceneID="ZUI-Ud-gWm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NJP-xw-1q6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="mhy-mY-Uhl"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" selectedImage="gear-filled" id="mhy-mY-Uhl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YZn-MA-KG2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -277,5 +277,9 @@
     <resources>
         <image name="Button-Highlighted" width="91" height="21"/>
         <image name="Button-Normal" width="91" height="21"/>
+        <image name="gear" width="25" height="25"/>
+        <image name="gear-filled" width="25" height="25"/>
+        <image name="tree" width="25" height="25"/>
+        <image name="tree-selected" width="25" height="25"/>
     </resources>
 </document>
