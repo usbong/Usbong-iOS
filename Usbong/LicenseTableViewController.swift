@@ -11,7 +11,7 @@ import UIKit
 class LicenseTableViewController: UITableViewController {
     var license: String? {
         didSet {
-            navigationItem.title = title ?? "Unkown"
+            navigationItem.title = license ?? "Unkown"
             tableView.reloadData()
         }
     }
