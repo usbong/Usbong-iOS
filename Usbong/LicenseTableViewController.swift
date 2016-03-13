@@ -15,9 +15,18 @@ class LicenseTableViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+    
+    var licenseText: String? {
+        guard let title = license else { return nil }
+        
+        return LicensesData.licenseTextForLicense(title)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +47,7 @@ class LicenseTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "No License Found"
+        cell.textLabel?.text = licenseText ?? "No License Found"
         
         return cell
     }

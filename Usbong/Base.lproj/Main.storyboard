@@ -471,7 +471,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="uJA-YC-ENF" kind="show" id="P4k-F8-YFe"/>
+                                    <segue destination="uJA-YC-ENF" kind="show" identifier="showLicense" id="P4k-F8-YFe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -490,7 +490,7 @@
         <scene sceneID="4Dy-iS-rZZ">
             <objects>
                 <tableViewController id="uJA-YC-ENF" customClass="LicenseTableViewController" customModule="Usbong" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="hmX-NM-9I7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="hmX-NM-9I7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>

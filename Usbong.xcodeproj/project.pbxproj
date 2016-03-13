@@ -11,6 +11,8 @@
 		CFB0D8B21C95A024005E181C /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */; };
 		CFB0D8B41C95BA1C005E181C /* LicensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B31C95BA1C005E181C /* LicensesTableViewController.swift */; };
 		CFB0D8B61C95BD66005E181C /* LicenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */; };
+		CFB0D8BA1C95C097005E181C /* LicensesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B91C95C097005E181C /* LicensesData.swift */; };
+		CFB0D8BE1C95C415005E181C /* Crypto.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8BD1C95C415005E181C /* Crypto.license */; };
 		DF21A5CC1C1D7CB400E73591 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */; };
 		DF21A5CD1C1D7CB400E73591 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C71C1D7CB400E73591 /* Crypto.framework */; };
 		DF21A5CF1C1D7CB400E73591 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */; };
@@ -49,6 +51,8 @@
 		CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		CFB0D8B31C95BA1C005E181C /* LicensesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesTableViewController.swift; sourceTree = "<group>"; };
 		CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseTableViewController.swift; sourceTree = "<group>"; };
+		CFB0D8B91C95C097005E181C /* LicensesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesData.swift; sourceTree = "<group>"; };
+		CFB0D8BD1C95C415005E181C /* Crypto.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Crypto.license; sourceTree = "<group>"; };
 		DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		DF21A5C71C1D7CB400E73591 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
 		DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */,
 				CFB0D8B31C95BA1C005E181C /* LicensesTableViewController.swift */,
 				CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */,
+				CFB0D8B91C95C097005E181C /* LicensesData.swift */,
+				CFB0D8BD1C95C415005E181C /* Crypto.license */,
 				DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */,
 				DF874FDC1C0720E000593E8D /* Main.storyboard */,
 				DF874FDF1C0720E000593E8D /* Assets.xcassets */,
@@ -280,6 +286,7 @@
 				DF874FE31C0720E000593E8D /* LaunchScreen.storyboard in Resources */,
 				DF874FE01C0720E000593E8D /* Assets.xcassets in Resources */,
 				DF874FDE1C0720E000593E8D /* Main.storyboard in Resources */,
+				CFB0D8BE1C95C415005E181C /* Crypto.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +338,7 @@
 				CFB0D8B61C95BD66005E181C /* LicenseTableViewController.swift in Sources */,
 				DF874FD91C0720E000593E8D /* AppDelegate.swift in Sources */,
 				DF40EB3A1C1FD8D600874A57 /* TreeViewController.swift in Sources */,
+				CFB0D8BA1C95C097005E181C /* LicensesData.swift in Sources */,
 				DF40EB361C1FC5A600874A57 /* TreesTableViewController.swift in Sources */,
 				CFB0D8B41C95BA1C005E181C /* LicensesTableViewController.swift in Sources */,
 			);

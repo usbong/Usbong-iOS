@@ -35,14 +35,15 @@ class LicensesTableViewController: UITableViewController {
         return cell
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        guard segue.identifier == "showLicense" else { return }
+        guard let licenseVC = segue.destinationViewController as? LicenseTableViewController else { return }
+        guard let selectedRow = tableView.indexPathForSelectedRow?.row else { return }
+        
+        licenseVC.license = licenses[selectedRow]
     }
-    */
-
+    
 }
