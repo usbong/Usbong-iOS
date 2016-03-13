@@ -24,9 +24,16 @@ class TreesTableViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        // Reload tree list every time view appears
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didOpenURL:"), name: UsbongNotification.CopiedTreeInApp, object: nil)
         
+        // Reload tree list every time view appears
         reloadTreeList()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +45,10 @@ class TreesTableViewController: UITableViewController {
         // Fetch tree urls
         treeURLs = UsbongFileManager.defaultManager().treesAtRootURL()
         tableView.reloadData()
+    }
+    
+    func didOpenURL(notification: NSNotification) {
+        reloadTreeList()
     }
 
     // MARK: - Table view data source
