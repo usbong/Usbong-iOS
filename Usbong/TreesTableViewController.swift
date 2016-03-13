@@ -9,7 +9,8 @@
 import UIKit
 import UsbongKit
 
-class TreesTableViewController: UITableViewController {    
+class TreesTableViewController: UITableViewController {
+    var sampleTreeURLs: [NSURL] = []
     var treeURLs: [NSURL] = []
     
     override func viewDidLoad() {
@@ -43,6 +44,7 @@ class TreesTableViewController: UITableViewController {
     
     func reloadTreeList() {
         // Fetch tree urls
+        sampleTreeURLs = NSBundle.mainBundle().URLsForResourcesWithExtension("utree", subdirectory: nil) ?? []
         treeURLs = UsbongFileManager.defaultManager().treesAtRootURL()
         tableView.reloadData()
     }
@@ -54,18 +56,50 @@ class TreesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        if sampleTreeURLs.count == 0 {
+            return 1
+        }
+        
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if sampleTreeURLs.count > 0 && section == 0 {
+            return 1
+        }
+        
         return treeURLs.count
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if sampleTreeURLs.count > 0 && section == 0 {
+            return "Samples"
+        }
+        
+        return "Documents"
+    }
+    
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if sampleTreeURLs.count > 0 && section == 0 {
+            return nil
+        }
+        
+        return "To add more trees in Documents, add .utree files by using iTunes or by opening them from other apps using the \"Open In...\" Share Dialog, and choosing \"Copy to Usbong\"."
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("treeCell", forIndexPath: indexPath)
         
+        // Get url
+        let url: NSURL
+        if sampleTreeURLs.count > 0 && indexPath.section == 0 {
+            url = sampleTreeURLs[indexPath.row]
+        } else {
+            url = treeURLs[indexPath.row]
+        }
+        
         // Set text of cell to file name without extension
-        var fileName = treeURLs[indexPath.row].URLByDeletingPathExtension?.lastPathComponent
+        var fileName = url.URLByDeletingPathExtension?.lastPathComponent
         
         // If all spaces or doesn't exist, resort to default file name
         if fileName?.stringByReplacingOccurrencesOfString(" ", withString: "").characters.count == 0 || fileName == nil {
@@ -77,14 +111,16 @@ class TreesTableViewController: UITableViewController {
         
         return cell
     }
-
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
+        // Do not allow editing on sample trees
+        if sampleTreeURLs.count > 0 && indexPath.section == 0 {
+            return false
+        }
+        
         return true
     }
-    */
     
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -130,7 +166,14 @@ class TreesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "presentTree" {
             if let treeVC = (segue.destinationViewController as? UINavigationController)?.topViewController as? TreeViewController, let indexPath = tableView.indexPathForSelectedRow {
-                treeVC.treeURL = treeURLs[indexPath.row]
+                let treeURL: NSURL
+                if sampleTreeURLs.count > 0 && indexPath.section == 0 {
+                    treeURL = sampleTreeURLs[indexPath.row]
+                } else {
+                    treeURL = treeURLs[indexPath.row]
+                }
+                
+                treeVC.treeURL = treeURL
             }
         }
     }
