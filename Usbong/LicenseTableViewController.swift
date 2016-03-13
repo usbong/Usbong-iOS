@@ -19,21 +19,26 @@ class LicenseTableViewController: UITableViewController {
     var licenseText: String? {
         guard let title = license else { return nil }
         
-        return LicensesData.licenseTextForLicense(title)
+        return licenseTextForLicense(title)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func licenseTextForLicense(license: String) -> String? {
+        guard let url = NSBundle.mainBundle().URLForResource(license, withExtension: "license") else { return nil }
+        return try? String(contentsOfURL: url)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

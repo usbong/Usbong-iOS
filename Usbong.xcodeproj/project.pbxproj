@@ -11,7 +11,6 @@
 		CFB0D8B21C95A024005E181C /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */; };
 		CFB0D8B41C95BA1C005E181C /* LicensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B31C95BA1C005E181C /* LicensesTableViewController.swift */; };
 		CFB0D8B61C95BD66005E181C /* LicenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */; };
-		CFB0D8BA1C95C097005E181C /* LicensesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B91C95C097005E181C /* LicensesData.swift */; };
 		CFB0D8BE1C95C415005E181C /* Crypto.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8BD1C95C415005E181C /* Crypto.license */; };
 		CFB0D8C11C95C697005E181C /* SWXMLHash.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C01C95C697005E181C /* SWXMLHash.license */; };
 		CFB0D8C31C95C6C2005E181C /* UsbongKit.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C21C95C6C2005E181C /* UsbongKit.license */; };
@@ -54,7 +53,6 @@
 		CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		CFB0D8B31C95BA1C005E181C /* LicensesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesTableViewController.swift; sourceTree = "<group>"; };
 		CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseTableViewController.swift; sourceTree = "<group>"; };
-		CFB0D8B91C95C097005E181C /* LicensesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesData.swift; sourceTree = "<group>"; };
 		CFB0D8BD1C95C415005E181C /* Crypto.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Crypto.license; sourceTree = "<group>"; };
 		CFB0D8C01C95C697005E181C /* SWXMLHash.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SWXMLHash.license; sourceTree = "<group>"; };
 		CFB0D8C21C95C6C2005E181C /* UsbongKit.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UsbongKit.license; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */,
 				CFB0D8B31C95BA1C005E181C /* LicensesTableViewController.swift */,
 				CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */,
-				CFB0D8B91C95C097005E181C /* LicensesData.swift */,
 				CFB0D8BF1C95C655005E181C /* Licenses */,
 				DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */,
 				DF874FDC1C0720E000593E8D /* Main.storyboard */,
@@ -358,7 +355,6 @@
 				CFB0D8B61C95BD66005E181C /* LicenseTableViewController.swift in Sources */,
 				DF874FD91C0720E000593E8D /* AppDelegate.swift in Sources */,
 				DF40EB3A1C1FD8D600874A57 /* TreeViewController.swift in Sources */,
-				CFB0D8BA1C95C097005E181C /* LicensesData.swift in Sources */,
 				DF40EB361C1FC5A600874A57 /* TreesTableViewController.swift in Sources */,
 				CFB0D8B41C95BA1C005E181C /* LicensesTableViewController.swift in Sources */,
 			);
