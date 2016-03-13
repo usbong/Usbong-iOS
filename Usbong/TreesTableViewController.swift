@@ -84,7 +84,7 @@ class TreesTableViewController: UITableViewController {
             return nil
         }
         
-        return "To add more trees in Documents, add .utree files by using iTunes or by opening them from other apps using the \"Open In...\" Share Dialog, and choosing \"Copy to Usbong\"."
+        return "To add more trees in Documents, add .utree files by using iTunes File Sharing or by opening them from other apps using the \"Open In...\" Share Dialog, and choosing \"Copy to Usbong\"."
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
