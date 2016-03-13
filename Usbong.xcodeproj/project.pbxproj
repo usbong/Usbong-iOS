@@ -13,6 +13,9 @@
 		CFB0D8B61C95BD66005E181C /* LicenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */; };
 		CFB0D8BA1C95C097005E181C /* LicensesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B91C95C097005E181C /* LicensesData.swift */; };
 		CFB0D8BE1C95C415005E181C /* Crypto.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8BD1C95C415005E181C /* Crypto.license */; };
+		CFB0D8C11C95C697005E181C /* SWXMLHash.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C01C95C697005E181C /* SWXMLHash.license */; };
+		CFB0D8C31C95C6C2005E181C /* UsbongKit.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C21C95C6C2005E181C /* UsbongKit.license */; };
+		CFB0D8C51C95C6CC005E181C /* ZipArchive.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C41C95C6CC005E181C /* ZipArchive.license */; };
 		DF21A5CC1C1D7CB400E73591 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */; };
 		DF21A5CD1C1D7CB400E73591 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C71C1D7CB400E73591 /* Crypto.framework */; };
 		DF21A5CF1C1D7CB400E73591 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */; };
@@ -53,6 +56,9 @@
 		CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseTableViewController.swift; sourceTree = "<group>"; };
 		CFB0D8B91C95C097005E181C /* LicensesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesData.swift; sourceTree = "<group>"; };
 		CFB0D8BD1C95C415005E181C /* Crypto.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Crypto.license; sourceTree = "<group>"; };
+		CFB0D8C01C95C697005E181C /* SWXMLHash.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SWXMLHash.license; sourceTree = "<group>"; };
+		CFB0D8C21C95C6C2005E181C /* UsbongKit.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UsbongKit.license; sourceTree = "<group>"; };
+		CFB0D8C41C95C6CC005E181C /* ZipArchive.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZipArchive.license; sourceTree = "<group>"; };
 		DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		DF21A5C71C1D7CB400E73591 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
 		DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				CFB0D8BD1C95C415005E181C /* Crypto.license */,
+				CFB0D8C01C95C697005E181C /* SWXMLHash.license */,
+				CFB0D8C21C95C6C2005E181C /* UsbongKit.license */,
+				CFB0D8C41C95C6CC005E181C /* ZipArchive.license */,
 			);
 			name = Licenses;
 			sourceTree = "<group>";
@@ -290,8 +299,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB0D8C11C95C697005E181C /* SWXMLHash.license in Resources */,
 				DFF7749C1C216F2E00C77F34 /* Usbong iOS.utree in Resources */,
 				DF874FE31C0720E000593E8D /* LaunchScreen.storyboard in Resources */,
+				CFB0D8C31C95C6C2005E181C /* UsbongKit.license in Resources */,
+				CFB0D8C51C95C6CC005E181C /* ZipArchive.license in Resources */,
 				DF874FE01C0720E000593E8D /* Assets.xcassets in Resources */,
 				DF874FDE1C0720E000593E8D /* Main.storyboard in Resources */,
 				CFB0D8BE1C95C415005E181C /* Crypto.license in Resources */,
