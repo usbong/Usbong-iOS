@@ -47,6 +47,8 @@ class TreeViewController: UIViewController, PlayableTree, HintsTextViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nodeView.node = TextNode(text: "Loading Node...")
+        
         // Do any additional setup after loading the view.
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)) { () -> Void in
             var tree: UsbongTree? = nil
