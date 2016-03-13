@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CFB0D8B01C959A65005E181C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8AF1C959A65005E181C /* SettingsTableViewController.swift */; };
+		CFB0D8B21C95A024005E181C /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */; };
 		DF21A5CC1C1D7CB400E73591 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */; };
 		DF21A5CD1C1D7CB400E73591 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C71C1D7CB400E73591 /* Crypto.framework */; };
 		DF21A5CF1C1D7CB400E73591 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		CFB0D8AF1C959A65005E181C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		DF21A5C71C1D7CB400E73591 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
 		DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				DF40EB351C1FC5A600874A57 /* TreesTableViewController.swift */,
 				DF40EB391C1FD8D600874A57 /* TreeViewController.swift */,
 				CFB0D8AF1C959A65005E181C /* SettingsTableViewController.swift */,
+				CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */,
 				DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */,
 				DF874FDC1C0720E000593E8D /* Main.storyboard */,
 				DF874FDF1C0720E000593E8D /* Assets.xcassets */,
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB0D8B01C959A65005E181C /* SettingsTableViewController.swift in Sources */,
+				CFB0D8B21C95A024005E181C /* AboutTableViewController.swift in Sources */,
 				DF874FD91C0720E000593E8D /* AppDelegate.swift in Sources */,
 				DF40EB3A1C1FD8D600874A57 /* TreeViewController.swift in Sources */,
 				DF40EB361C1FC5A600874A57 /* TreesTableViewController.swift in Sources */,
