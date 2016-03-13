@@ -9,42 +9,13 @@
 import UIKit
 import UsbongKit
 
-private struct SampleTree {
-    static let fileName = "Usbong iOS"
-    static let ext = "utree"
-}
-
-class TreesTableViewController: UITableViewController {
-    let launchedKey = "launched-\(UIApplication.appVersion)"
-    
+class TreesTableViewController: UITableViewController {    
     var treeURLs: [NSURL] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        // Check if first launch, if first launch, copy sample tree
-        let standardUserDefaults = NSUserDefaults.standardUserDefaults()
-        
-        // Debug: Always first launch
-        #if DEBUG
-            standardUserDefaults.removeObjectForKey(launchedKey)
-        #endif
-        
-        if !standardUserDefaults.boolForKey(launchedKey) {
-            print("Welcome! This is the first launch for this app version")
-            standardUserDefaults.setBool(true, forKey: launchedKey)
-            
-            if let sampleTreeURL = NSBundle.mainBundle().URLForResource(SampleTree.fileName, withExtension: SampleTree.ext) {
-                do {
-                    let destinationURL = UsbongFileManager.defaultManager().rootURL.URLByAppendingPathComponent("\(SampleTree.fileName).\(SampleTree.ext)")
-                    try NSFileManager.defaultManager().copyItemAtURL(sampleTreeURL, toURL: destinationURL)
-                } catch let error {
-                    print("Failed to copy sample tree. Error:\n\(error)")
-                }
-            }
-        }
         
         // Reload tree list
         reloadTreeList()
