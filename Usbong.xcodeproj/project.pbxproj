@@ -14,11 +14,6 @@
 		DF21A5CF1C1D7CB400E73591 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */; };
 		DF21A5D01C1D7CB400E73591 /* UsbongKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5CA1C1D7CB400E73591 /* UsbongKit.framework */; };
 		DF21A5D11C1D7CB400E73591 /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5CB1C1D7CB400E73591 /* ZipArchive.framework */; };
-		DF21A5DA1C1D7D7300E73591 /* CommonCrypto.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D41C1D7D7300E73591 /* CommonCrypto.framework.dSYM */; };
-		DF21A5DB1C1D7D7300E73591 /* Crypto.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D51C1D7D7300E73591 /* Crypto.framework.dSYM */; };
-		DF21A5DD1C1D7D7300E73591 /* SWXMLHash.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D71C1D7D7300E73591 /* SWXMLHash.framework.dSYM */; };
-		DF21A5DE1C1D7D7300E73591 /* UsbongKit.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */; };
-		DF21A5DF1C1D7D7300E73591 /* ZipArchive.framework.dSYM in Carthage Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */; };
 		DF40EB361C1FC5A600874A57 /* TreesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40EB351C1FC5A600874A57 /* TreesTableViewController.swift */; };
 		DF40EB3A1C1FD8D600874A57 /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40EB391C1FD8D600874A57 /* TreeViewController.swift */; };
 		DF874FD91C0720E000593E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF874FD81C0720E000593E8D /* AppDelegate.swift */; };
@@ -47,24 +42,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DF21A5D31C1D7D4100E73591 /* Carthage Copy Debug Symbols */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-				DF21A5DA1C1D7D7300E73591 /* CommonCrypto.framework.dSYM in Carthage Copy Debug Symbols */,
-				DF21A5DB1C1D7D7300E73591 /* Crypto.framework.dSYM in Carthage Copy Debug Symbols */,
-				DF21A5DD1C1D7D7300E73591 /* SWXMLHash.framework.dSYM in Carthage Copy Debug Symbols */,
-				DF21A5DE1C1D7D7300E73591 /* UsbongKit.framework.dSYM in Carthage Copy Debug Symbols */,
-				DF21A5DF1C1D7D7300E73591 /* ZipArchive.framework.dSYM in Carthage Copy Debug Symbols */,
-			);
-			name = "Carthage Copy Debug Symbols";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		CFB0D8AF1C959A65005E181C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CFB0D8B11C95A024005E181C /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
@@ -73,11 +50,6 @@
 		DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		DF21A5CA1C1D7CB400E73591 /* UsbongKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UsbongKit.framework; path = Carthage/Build/iOS/UsbongKit.framework; sourceTree = "<group>"; };
 		DF21A5CB1C1D7CB400E73591 /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = Carthage/Build/iOS/ZipArchive.framework; sourceTree = "<group>"; };
-		DF21A5D41C1D7D7300E73591 /* CommonCrypto.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CommonCrypto.framework.dSYM; path = Carthage/Build/iOS/CommonCrypto.framework.dSYM; sourceTree = "<group>"; };
-		DF21A5D51C1D7D7300E73591 /* Crypto.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Crypto.framework.dSYM; path = Carthage/Build/iOS/Crypto.framework.dSYM; sourceTree = "<group>"; };
-		DF21A5D71C1D7D7300E73591 /* SWXMLHash.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SWXMLHash.framework.dSYM; path = Carthage/Build/iOS/SWXMLHash.framework.dSYM; sourceTree = "<group>"; };
-		DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = UsbongKit.framework.dSYM; path = Carthage/Build/iOS/UsbongKit.framework.dSYM; sourceTree = "<group>"; };
-		DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ZipArchive.framework.dSYM; path = Carthage/Build/iOS/ZipArchive.framework.dSYM; sourceTree = "<group>"; };
 		DF40EB351C1FC5A600874A57 /* TreesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreesTableViewController.swift; sourceTree = "<group>"; };
 		DF40EB391C1FD8D600874A57 /* TreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewController.swift; sourceTree = "<group>"; };
 		DF874FD51C0720E000593E8D /* Usbong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Usbong.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,22 +109,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF21A5E11C1D7D8600E73591 /* Debug Symbols */ = {
-			isa = PBXGroup;
-			children = (
-				DF21A5D41C1D7D7300E73591 /* CommonCrypto.framework.dSYM */,
-				DF21A5D51C1D7D7300E73591 /* Crypto.framework.dSYM */,
-				DF21A5D71C1D7D7300E73591 /* SWXMLHash.framework.dSYM */,
-				DF21A5D81C1D7D7300E73591 /* UsbongKit.framework.dSYM */,
-				DF21A5D91C1D7D7300E73591 /* ZipArchive.framework.dSYM */,
-			);
-			name = "Debug Symbols";
-			sourceTree = "<group>";
-		};
 		DF874FCC1C0720E000593E8D = {
 			isa = PBXGroup;
 			children = (
-				DF21A5E11C1D7D8600E73591 /* Debug Symbols */,
 				DF21A5E01C1D7D8100E73591 /* Frameworks */,
 				DF874FD71C0720E000593E8D /* Usbong */,
 				DF874FEC1C0720E000593E8D /* UsbongTests */,
@@ -217,7 +176,6 @@
 				DF874FD21C0720E000593E8D /* Frameworks */,
 				DF874FD31C0720E000593E8D /* Resources */,
 				DF21A5D21C1D7CBF00E73591 /* Carthage Copy Frameworks Script */,
-				DF21A5D31C1D7D4100E73591 /* Carthage Copy Debug Symbols */,
 			);
 			buildRules = (
 			);
