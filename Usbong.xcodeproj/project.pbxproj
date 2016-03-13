@@ -105,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFB0D8BF1C95C655005E181C /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0D8BD1C95C415005E181C /* Crypto.license */,
+			);
+			name = Licenses;
+			sourceTree = "<group>";
+		};
 		DF21A5E01C1D7D8100E73591 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +157,7 @@
 				CFB0D8B31C95BA1C005E181C /* LicensesTableViewController.swift */,
 				CFB0D8B51C95BD66005E181C /* LicenseTableViewController.swift */,
 				CFB0D8B91C95C097005E181C /* LicensesData.swift */,
-				CFB0D8BD1C95C415005E181C /* Crypto.license */,
+				CFB0D8BF1C95C655005E181C /* Licenses */,
 				DFF7749B1C216F1E00C77F34 /* Usbong iOS.utree */,
 				DF874FDC1C0720E000593E8D /* Main.storyboard */,
 				DF874FDF1C0720E000593E8D /* Assets.xcassets */,
