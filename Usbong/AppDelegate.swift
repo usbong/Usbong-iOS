@@ -14,6 +14,10 @@ private struct SampleTree {
     static let ext = "utree"
 }
 
+internal struct UsbongNotification {
+    static let CopiedTreeInApp = "ph.usbong.Usbong.CopiedTreeInApp"
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -81,8 +85,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        guard let fileNameExtension = url.pathExtension else { return false }
+        guard let fileName = url.URLByDeletingPathExtension?.lastPathComponent else { return false }
+        
+        switch fileNameExtension {
+        case "utree":
+            // Copy .utree files to Documents/
+            
+            print("Opening file: \(url)")
+            let fileManager = NSFileManager.defaultManager()
+            let rootURL = UsbongFileManager.defaultManager().rootURL
+            
+            // If filename exists, add suffix with the appropriate count
+            var suffixNumber = 0
+            var newURL = rootURL
+            
+            repeat {
+                let suffix = suffixNumber == 0 ? "" : "-\(suffixNumber)"
+                newURL = rootURL.URLByAppendingPathComponent("\(fileName)\(suffix)").URLByAppendingPathExtension(fileNameExtension)
+                
+                suffixNumber++
+            } while fileManager.fileExistsAtPath(newURL.path!)
+            
+            print("Copying file to: \(newURL.path!)")
+            
+            do {
+                try fileManager.moveItemAtURL(url, toURL: newURL)
+                
+                NSNotificationCenter.defaultCenter().postNotificationName(UsbongNotification.CopiedTreeInApp, object: nil)
+                
+                print("Successfully copied file!")
+                return true
+            } catch {
+                print("Failed to copy file")
+                return false
+            }
+        default:
+            return false
+        }
+    }
 }
 
 extension UIApplication {
