@@ -489,7 +489,7 @@
         <!--License-->
         <scene sceneID="4Dy-iS-rZZ">
             <objects>
-                <tableViewController id="uJA-YC-ENF" sceneMemberID="viewController">
+                <tableViewController id="uJA-YC-ENF" customClass="LicenseTableViewController" customModule="Usbong" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="hmX-NM-9I7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
