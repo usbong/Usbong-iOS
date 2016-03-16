@@ -1,0 +1,124 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# By default, fastlane will send which actions are used
+# No personal data is shared, more information on https://github.com/fastlane/enhancer
+# Uncomment the following line to opt out
+# opt_out_usage
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.66.0"
+
+default_platform :ios
+
+
+platform :ios do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+
+
+    # increment_build_number
+
+    # xctool # run the tests of your app
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    snapshot
+  end
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do |options|
+    increment_build_number
+    sigh(username: options[:username])
+    gym(scheme: "Usbong") # Build your app - more options available
+    pilot(username: options[:username])
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here
+  end
+
+  desc "Deploy a new build to the App Store. Takes the following arguments: \n \
+  :username the Apple ID to use to log into the developer portal for SIGH \n \
+  :skip_snapshot set to true to skip SNAPSHOT"
+  lane :appstore_new_build do |options|
+    increment_build_number
+
+    deliver_app(username: options[:username], skip_snapshot: options[:skip_snapshot])
+  end
+
+  desc "Deploy a new version to the App Store. Takes the following arguments: \n \
+  :username the Apple ID to use to log into the developer portal for SIGH \n \
+  :skip_snapshot set to true to skip SNAPSHOT \n \
+  :bump_type increment the version number with major, minor, or patch bump type"
+  lane :appstore_new_version do |options|
+    increment_build_number
+    increment_version_number(bump_type: options[:bump_type])
+
+    deliver_app(username: options[:username], skip_snapshot: options[:skip_snapshot])
+  end
+
+  desc "Deploy current build to the App Store. Takes the following arguments: \n \
+  :username the Apple ID to use to log into the developer portal for SIGH \n \
+  :skip_snapshot set to true to skip SNAPSHOT"
+  lane :appstore do |options|
+    deliver_app(username: options[:username], skip_snapshot: options[:skip_snapshot])
+  end
+
+  private_lane :deliver_app do |options|
+    if options[:skip_snapshot]
+      puts "\nSkipping snapshot...\n"
+    else
+      snapshot
+    end
+
+    sigh(username: options[:username])
+    gym(scheme: "Usbong") # Build your app - more options available
+    deliver(force: true, username: options[:username])
+  end
+
+  desc "Increment version with specified bump_type"
+  lane :increment_version_number do |options|
+    increment_version_number(bump_type: options[:bump_type])
+  end
+
+  desc "Show git commits since the last git tag"
+  lane :show_changelog do
+    puts "\n** Changes since #{last_git_tag} **:\n#{changelog_from_git_commits}"
+  end
+
+  desc "Generate screenshots"
+  lane :generate_screenshots do
+    snapshot
+  end
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
+
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/docs/Actions.md
