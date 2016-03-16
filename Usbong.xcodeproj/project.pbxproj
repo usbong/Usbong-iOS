@@ -15,6 +15,7 @@
 		CFB0D8C11C95C697005E181C /* SWXMLHash.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C01C95C697005E181C /* SWXMLHash.license */; };
 		CFB0D8C31C95C6C2005E181C /* UsbongKit.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C21C95C6C2005E181C /* UsbongKit.license */; };
 		CFB0D8C51C95C6CC005E181C /* ZipArchive.license in Resources */ = {isa = PBXBuildFile; fileRef = CFB0D8C41C95C6CC005E181C /* ZipArchive.license */; };
+		CFB1234E1C994E04001E23A5 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1234D1C994E04001E23A5 /* SnapshotHelper.swift */; };
 		DF21A5CC1C1D7CB400E73591 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */; };
 		DF21A5CD1C1D7CB400E73591 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C71C1D7CB400E73591 /* Crypto.framework */; };
 		DF21A5CF1C1D7CB400E73591 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */; };
@@ -57,6 +58,7 @@
 		CFB0D8C01C95C697005E181C /* SWXMLHash.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SWXMLHash.license; sourceTree = "<group>"; };
 		CFB0D8C21C95C6C2005E181C /* UsbongKit.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UsbongKit.license; sourceTree = "<group>"; };
 		CFB0D8C41C95C6CC005E181C /* ZipArchive.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZipArchive.license; sourceTree = "<group>"; };
+		CFB1234D1C994E04001E23A5 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		DF21A5C61C1D7CB400E73591 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		DF21A5C71C1D7CB400E73591 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
 		DF21A5C91C1D7CB400E73591 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		DF874FF71C0720E000593E8D /* UsbongUITests */ = {
 			isa = PBXGroup;
 			children = (
+				CFB1234D1C994E04001E23A5 /* SnapshotHelper.swift */,
 				DF874FF81C0720E000593E8D /* UsbongUITests.swift */,
 				DF874FFA1C0720E000593E8D /* Info.plist */,
 			);
@@ -373,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF874FF91C0720E000593E8D /* UsbongUITests.swift in Sources */,
+				CFB1234E1C994E04001E23A5 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
