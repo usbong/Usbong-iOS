@@ -1,0 +1,2 @@
+• Added auto-play feature
+• Optimized for iOS 9.3
