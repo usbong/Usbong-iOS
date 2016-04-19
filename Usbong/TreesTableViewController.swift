@@ -25,7 +25,7 @@ class TreesTableViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didOpenURL:"), name: UsbongNotification.CopiedTreeInApp, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didOpenURL(_:)), name: UsbongNotification.CopiedTreeInApp, object: nil)
         
         // Reload tree list every time view appears
         reloadTreeList()

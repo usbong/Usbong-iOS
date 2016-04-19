@@ -84,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let suffix = suffixNumber == 0 ? "" : "-\(suffixNumber)"
                 newURL = rootURL.URLByAppendingPathComponent("\(fileName)\(suffix)").URLByAppendingPathExtension(fileNameExtension)
                 
-                suffixNumber++
+                suffixNumber += 1
             } while fileManager.fileExistsAtPath(newURL.path!)
             
             print("Copying file to: \(newURL.path!)")
