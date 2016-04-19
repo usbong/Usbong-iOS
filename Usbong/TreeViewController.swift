@@ -14,7 +14,7 @@ private enum TransitionDirection {
     case Backward, Forward
 }
 
-class TreeViewController: UIViewController, PlayableTree, HintsTextViewDelegate {
+class TreeViewController: UIViewController, PlayableTree, HintsTextViewDelegate, AutoPlayableTree {
     
     @IBOutlet weak var buttonsContainerViewHeightConstraint: NSLayoutConstraint!
     
@@ -22,6 +22,8 @@ class TreeViewController: UIViewController, PlayableTree, HintsTextViewDelegate 
     @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var nodeView: NodeView!
+    
+    lazy var voiceOverCoordinator: VoiceOverCoordinator = VoiceOverCoordinator(delegate: self, playableTree: self)
     
     var tree: UsbongTree?
     var treeURL: NSURL?
