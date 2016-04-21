@@ -1,6 +1,7 @@
-Usbong is a social business whose mission is to defeat poverty by uplifting human lives through our thrusts in education and healthcare. Our vision is to build a community where there is lasting peace.
-Therefore, we provide training and workshops on Android development, Software Engineering, and Social Entrepreneurship. We also offer software development services.
+"Usbong" is a social business whose mission is to defeat poverty by uplifting human lives through our thrusts in education and healthcare. Our vision is to build a community where there is lasting peace.
 
-Our flagship product is also called Usbong. Together with its companion Android app, Usbong Builder, it is an open source platform that helps even non-technical people build their own Android apps for use in data collection, assessment, training, screening, diagnostics, and also multilingual interactive storytelling.
+We provide training and workshops on mobile development, and we offer software development services, such that as long as you have a flowchart, we can turn it into an app. 
+
+Our flagship open source product is also called "Usbong." Together with its companion app, "Usbong Builder," they help even non-technical people build their own mobile apps for use in data collection, assessment, training, screening, diagnostics, and also multilingual interactive digital storytelling.
 
 More information: http://www.usbong.ph
