@@ -1,2 +1,2 @@
-• Added auto-play feature
-• Optimized for iOS 9.3
+• Fixed base language of sample tree
+• By default, base language is set to English
