@@ -1,2 +1,2 @@
-• Fixed base language of sample tree
-• By default, base language is set to English
+• Fixed languages list. Languages list no longer shows "trans" (translation) in the list. Now, only .xml files are shown in the list
+
